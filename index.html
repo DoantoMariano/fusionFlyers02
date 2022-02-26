@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Fusion Flayers</title>
+</head>
+
+<body>
+    <div class="music">
+        <audio src="music/music.mp3" autoplay controls loop></audio>
+    </div>
+
+    <section>
+        <div>
+            <img class="logo" src="assets/logoFF.png" alt="logo">
+        </div>
+
+        <div class="bannerVideo" id="slideShow">
+            <video src="assets/paracaidas.mp4" autoplay mute loop class="active"></video>
+            <video src="assets/tunel.mp4" autoplay mute loop></video>
+            <video src="assets/eventos.mp4" autoplay mute loop></video>
+            <video src="assets/tutorials.mp4" autoplay mute loop></video>
+            <video src="assets/fotos.mp4" autoplay mute loop></video>
+            <video src="assets/FusuionFlayers.mp4" autoplay mute loop></video>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <div class="bannerText" id="slideShowText">
+                    <div class="active inicio">
+                        <a href="paracaidas.html">Paracaidismo</a>
+                    </div>
+                    <div>
+                        <a href="tunel.html">Tunel de Viento</a>
+                    </div>
+                    <div class="text">
+                        <a href="eventos.html">Eventos</a>
+                    </div>
+                    <div class="text">
+                        <a href="tutorials.html">Tutorials</a>
+                    </div>
+                    <div class="textFoto">
+                        <a href="galeria.html">Fotos</a>
+                    </div>
+                    <div>
+                        <a href="fusion_flayers.html">Fusion Flyers</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <ul class="controls">
+                    <li onclick="prevSlide(); prevSlideText();"><img src="assets/left.png" alt="left"></li>
+                    <li onclick="nextSlide();nextSlideText();"><img src="assets/right.png" alt="rigth"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>

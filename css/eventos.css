@@ -1,0 +1,41 @@
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.header #bg {
+    background: url(../assets/eventos.jpg);
+    background-size: 100%;
+}
+
+.titulo-eventos {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+section .text {
+    margin: 25px 0;
+}
+
+section div {
+    width: 100%;
+    max-height: 100%;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+section div iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+section div video {
+    width: 49.8%;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+@media screen and (max-width:1210px) {
+    .saltos_videos {
+        text-align: center;
+    }
+}

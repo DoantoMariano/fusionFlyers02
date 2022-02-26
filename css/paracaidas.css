@@ -1,0 +1,90 @@
+.header #bg {
+    background: url(../assets/paracaidismo.jpg);
+    background-size: 100%;
+}
+
+section .videos {
+    height: 75vh;
+    width: 100%;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    overflow: hidden;
+    margin: 2% 0;
+}
+
+section div video {
+    width: 100%;
+}
+
+video::-webkit-media-controls-panel {
+    margin-bottom: 52%;
+    background-color: transparent;
+}
+
+video::-webkit-media-controls-timeline {
+    display: none;
+}
+
+.estilo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.estilo .tipos p {
+    font-size: 17px;
+}
+
+.text {
+    width: 45%;
+}
+
+.imagen {
+    width: 60%;
+}
+
+h4 {
+    color: yellow;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.imagen img {
+    width: 100%;
+    padding-right: 0;
+    align-items: center;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+@media screen and (max-width:1200px) {
+    section .videos {
+        height: auto;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .estilo {
+        /* flex-direction: column; */
+        display: block;
+    }
+    .estilo h4 {
+        font-size: 45px;
+    }
+    .estilo img {
+        display: none;
+    }
+    .text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    video::-webkit-media-controls-panel {
+        margin-bottom: 40%;
+    }
+}

@@ -1,0 +1,311 @@
+/* ++++++++++++++++++++++++++++++++++++++ Estilo GENERAL ++++++ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Orbitron', sans-serif;
+    width: 100%;
+}
+
+.menu-respons {
+    display: none;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+}
+
+.encabezado {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+section {
+    padding: 0 50px;
+    padding-bottom: 40px;
+    color: rgb(199, 194, 194);
+}
+
+section p {
+    font-size: 20px;
+}
+
+section h3 {
+    padding: 40px 0 0 5px;
+    font-size: 40px;
+    color: red;
+}
+
+section span {
+    color: red;
+    font-size: 35px;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px yellow;
+}
+
+
+/* Estilo de paralax inicialde cada sección de las paginas */
+
+.header #bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+
+/* ++++++++++++++++++++++++++++++ Indice o Barra de MENU ++++++ */
+
+.indice {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding-top: 1%;
+    background-color: rgb(0, 0, 0);
+}
+
+.indice ul {
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    /* margin-left: 1%; */
+}
+
+.indice li {
+    float: left;
+    padding: 15px;
+    margin-top: -30px;
+    text-decoration: none;
+    color: black;
+}
+
+.indice ul :hover {
+    color: rgb(228, 131, 40);
+    transition: .5s;
+}
+
+.indice a {
+    text-decoration: none;
+    color: white;
+}
+
+i {
+    color: white;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Estilo menu Responsive */
+
+
+/* Estilo ICONO menu */
+
+.menu-respon {
+    display: none;
+}
+
+.menu-respon img {
+    width: 30px;
+}
+
+
+/* Estilo del imput */
+
+.menu-respon input[type="checkbox"] {
+    display: none;
+}
+
+
+/* estilo del fondo barra de menu */
+
+.menu-respon nav {
+    width: 300px;
+    height: 100%;
+    padding-top: 55px;
+    position: absolute;
+    top: 10%;
+    left: -300px;
+    transition: all 0.5s;
+    background-color: rgba(16, 16, 16, 0.7);
+    position: fixed;
+    z-index: 1;
+}
+
+
+/* Estilo al input para que aparezca la barra de menu*/
+
+.menu-respon input[type="checkbox"]:checked~nav {
+    transform: translateX(300px);
+}
+
+.menu-respon label {
+    position: fixed;
+    background: white;
+    padding: 1.5%;
+    border-radius: 50%;
+    top: 2%;
+}
+
+
+/* Estilo de las Lista */
+
+.menu-respon ul {
+    top: 5%;
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    width: 98%;
+}
+
+.menu-respon li {
+    width: 100%;
+}
+
+.menu-respon a {
+    display: block;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-respon a:hover {
+    background-color: rgb(100, 164, 167, 0.5);
+    transition: 0.7s;
+    color: white;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ ESTILO DEL FOOTER +++++++ */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: rgb(34, 33, 33);
+    color: white;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5%;
+}
+
+
+/* redes sociales */
+
+.inform {
+    text-align: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+footer {
+    position: relative;
+}
+
+footer .followus li {
+    list-style: none;
+    float: left;
+    font-size: 35px;
+    padding: 0 10px;
+}
+
+footer .followus li i:hover {
+    color: rgb(207, 176, 176);
+    transition: 0.5s;
+}
+
+
+/* sponsors */
+
+footer .sponsors {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 30%;
+    gap: 10px;
+    filter: grayscale(100%)
+}
+
+footer .sponsors div {
+    width: 100%;
+}
+
+footer .sponsors img {
+    width: 100%;
+}
+
+
+/* Derechos de autor */
+
+footer .derechos {
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 10px;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++ Pantallas responsive ++++++++*/
+
+@media screen and (max-width:1496px) {
+    .header #bg {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .menu_top {
+        display: none;
+    }
+    .menu-respon {
+        display: block;
+    }
+}
+
+@media screen and (max-width:840px) {
+    footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .inform,
+    footer .contacto,
+    footer .sponsors {
+        margin-bottom: 10px;
+    }
+    footer .sponsors {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .encabezado img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    footer .sponsors {
+        width: 80%;
+    }
+}

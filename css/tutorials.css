@@ -1,0 +1,171 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++ ESTILO TUTOLRIALES ++++++++ */
+
+.header #bg {
+    background: url(../assets/tutorial.jpg);
+    background-size: 100%;
+}
+
+.tutorials {
+    display: grid;
+    grid-template-columns: 0.7fr .5fr;
+    gap: 5%;
+    align-items: flex-start;
+    padding: 20px 5px;
+    margin-top: 0;
+    height: 100%;
+}
+
+
+/* Estilo video principal */
+
+.main-video {
+    background: rgba(41, 41, 41, 0.9);
+    border-radius: 5px;
+    padding: 30px;
+    padding-bottom: 10px;
+    margin-left: 5%;
+    border: 1px solid rgb(250, 4, 4);
+}
+
+.main-video iframe {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.main-video .title {
+    color: rgb(197, 197, 197);
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/* Contenedor de las lista de videos */
+
+.video-list {
+    border-radius: 5px;
+    height: 475px;
+    margin-right: 5%;
+    overflow-y: scroll;
+    background: rgba(41, 41, 41, 0.9);
+    border: 1px solid rgb(250, 4, 4);
+    /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7); */
+    /* backdrop-filter: blur(5px); */
+}
+
+.video-list::-webkit-scrollbar {
+    width: 7px;
+}
+
+.video-list::-webkit-scrollbar-track {
+    background: #CCC;
+    border-radius: 50px;
+}
+
+.video-list::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 50px;
+}
+
+.video-list .vid {
+    width: 85%;
+    margin-top: 1%;
+    margin-left: 8%;
+    cursor: pointer;
+}
+
+.video-list .vid p {
+    font-size: 11px;
+    color: rgb(250, 110, 110);
+    letter-spacing: 1px;
+}
+
+.video-list .vid iframe {
+    /* width: 100px;
+    height: 50px;
+    border-radius: 5px; */
+    display: none;
+}
+
+.video-list .vid.active {
+    background-color: rgba(88, 85, 85, 0.5);
+}
+
+
+/* Estilo al summary de la lista de videos */
+
+.video-list summary {
+    width: 90%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    padding: 2%;
+    list-style: none;
+    border-radius: 5px;
+    background-color: rgba(88, 85, 85, 0.5);
+    border: 1px solid rgb(148, 84, 84);
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-list details:hover summary {
+    background-color: rgba(37, 35, 35, 0.5);
+}
+
+.video-list summary h3 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.video-list summary p {
+    margin-left: 3%;
+    margin: 0;
+    color: thistle;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* @media screen and (max-width:1496px) {
+    .header #bg {
+        background-size: unset;
+    }
+} */
+
+@media (max-width:991px) {
+    .tutorials {
+        grid-template-columns: 1.5fr 1fr;
+        padding: 10px;
+    }
+    .video-list {
+        margin-right: 0%;
+    }
+    .main-video {
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width:780px) {
+    /* .encabezado img {
+        width: 80%;
+    } */
+    .parallax-360 a {
+        font-size: 50px;
+    }
+    .menu_top {
+        display: none;
+    }
+    .menu-respon {
+        display: block;
+    }
+    .tutorials {
+        grid-template-columns: 1fr;
+    }
+    .video-list {
+        height: 350px;
+    }
+}

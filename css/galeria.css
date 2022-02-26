@@ -1,0 +1,124 @@
+/* +++++++++++++++++++++++++++++++++++++++ Estilo IMAGENES de la GALERIA ++++++++ */
+
+.header #bg {
+    background: url(../assets/fotos-portada.png);
+    background-size: 100%;
+}
+
+.columna {
+    padding: 0 50px;
+}
+
+#galeria {
+    columns: 3 200px;
+    padding-top: 20px;
+}
+
+#galeria div img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid rgb(253, 0, 0, 0.7);
+    transition: 0.3s !important;
+}
+
+#galeria div img:hover {
+    transform: scale(1.03) !important;
+    cursor: pointer;
+    border: 1px solid rgba(249, 253, 0, 0.986);
+}
+
+#img-activa {
+    width: 100%;
+    height: auto;
+}
+
+
+/*Contenedor Principal del Lightbox*/
+
+#contenedor-principal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Contenedor interno del Lightbox*/
+
+#contenedor-interno {
+    border: 2px #f3f3f3 solid;
+    padding: 2px;
+    background: #3f3f3f;
+    max-width: 1000px;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Botones*/
+
+button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #f3f3f3;
+}
+
+#btn-cierra {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 10px;
+    font-size: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#btn-retrocede {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 3rem;
+    text-shadow: 3px 3px 5px black;
+}
+
+#btn-adelanta {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 3rem;
+    text-shadow: 3px 3px 5px black;
+}
+
+
+/* @media screen and (max-width:1496px) {
+    .header #bg {
+        background-size: unset;
+    }
+} */
+
+@media screen and (max-width:780px) {
+    /* .encabezado img {
+        width: 80%;
+    } */
+    .parallax-360 a {
+        font-size: 50px;
+    }
+    .menu_top {
+        display: none;
+    }
+    .menu-respon {
+        display: block;
+    }
+}
