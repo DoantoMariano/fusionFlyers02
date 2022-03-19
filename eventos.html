@@ -23,10 +23,41 @@
     </div>
 
     <!-- inserta la barra de menu -->
+
     <!-- Menu navegación -->
-    <div class="indice">
-        <div id="menu_top"></div>
+    <nav>
+        <div class="indice  menu_top">
+            <ul>
+                <li><a href="paracaidas.html">Paracaidismo</a></li>
+                <li><a href="tunel.html">Tunel</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="tutorials.html">Tutoriales</a></li>
+                <li><a href="galeria.html">Fotos</a></li>
+                <li><a href="fusion_flayers.html">Nosotros</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="menu-respon">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <img src="assets/menubar.png" alt="menu">
+        </label>
+        <nav>
+            <ul>
+                <li><a href="paracaidas.html" class="link ">Paracaidismo</a></li>
+                <li><a href="tunel.html">Tunel</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="tutorials.html">Tutoriales</a></li>
+                <li><a href="galeria.html">Fotos</a></li>
+                <li><a href="fusion_flayers.html">Nosotros</a></li>
+            </ul>
+        </nav>
     </div>
+
+    <!-- <div class="indice">
+        <div id="menu_top"></div>
+    </div> -->
 
     <div class="encabezado titulo-eventos" data-aos="fade-right">
         <img src="assets/fusuion-eventos-red.png" alt="fusion-day-red">
@@ -99,7 +130,7 @@
 
     <!-- Script que insera el menu -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/menu_top.js"></script>
+    <!-- <script src="js/menu_top.js"></script> -->
     <script>
         var headerBg = document.getElementById('bg');
         window.addEventListener('scroll', function() {
