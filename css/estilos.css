@@ -99,8 +99,9 @@ section span {
     top: 0;
     width: 100%;
     z-index: 10;
-    padding-top: 1%;
+    padding-top: 1.5%;
     background-color: rgb(0, 0, 0);
+    transition: .5s;
 }
 
 .indice ul {
@@ -130,6 +131,28 @@ section span {
 
 i {
     color: white;
+}
+
+
+/* Linea animada debajo del texto */
+
+.menu_top ul li a::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    background-color: rgb(155, 156, 156);
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: -2px;
+    right: 50%;
+    transition: all 0.3s;
+    will-change: width;
+}
+
+.menu_top ul li a:hover::after {
+    width: 100%;
+    right: 0;
+    cursor: pointer;
 }
 
 
