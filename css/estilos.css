@@ -136,7 +136,8 @@ i {
 
 /* Linea animada debajo del texto */
 
-.menu_top ul li a::after {
+
+/* .menu_top ul li a::after {
     content: '';
     width: 0;
     height: 4px;
@@ -153,7 +154,7 @@ i {
     width: 100%;
     right: 0;
     cursor: pointer;
-}
+} */
 
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Estilo menu Responsive */
